@@ -334,8 +334,10 @@ export default function Home() {
                             <div
                                 className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
                             <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Predrag Ranđelović</h3>
-                                <p className="text-red-600 font-bold uppercase text-sm mb-2">Diplomirani profesor sporta i fizičkog vaspitanja</p>
+                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Predrag
+                                    Ranđelović</h3>
+                                <p className="text-red-600 font-bold uppercase text-sm mb-2">Diplomirani profesor sporta
+                                    i fizičkog vaspitanja</p>
                                 <p className="text-zinc-400 text-xs">Specijalista za stand-up borbu i taktičku
                                     pripremu.</p>
                             </div>
@@ -397,10 +399,9 @@ export default function Home() {
                                 Hardcore <span className="text-red-600">Teretana</span>
                             </h2>
                             <p className="text-zinc-400 mb-6 text-lg">
-                                Nema sjajnih sprava. Nema klima uređaja koji lede. Samo gvožđe, tegovi i atmosfera za
-                                rad.
-                                Naša teretana je opremljena za funkcionalni trening, powerlifting i kondicionu pripremu
-                                boraca.
+                                Bez izgovora. Samo čelik i karakter. Ovde se ne dolazi da se 'vežba', ovde se kuje
+                                gvožđe i sprema za rat. Teretana za one koji znaju da rezultat ne pada sa neba, već se
+                                otima sa poda.
                             </p>
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
@@ -726,7 +727,7 @@ export default function Home() {
                                 </a>
                                 {/* Placeholder for future socials */}
                                 <a href="tel:1234"
-                                    className="w-10 h-10 bg-zinc-900 flex items-center justify-center rounded-full text-zinc-400 hover:bg-red-600 hover:text-white transition-all">
+                                   className="w-10 h-10 bg-zinc-900 flex items-center justify-center rounded-full text-zinc-400 hover:bg-red-600 hover:text-white transition-all">
                                     <Phone size={20}/>
                                 </a>
                             </div>
@@ -758,7 +759,7 @@ export default function Home() {
 
                     <div
                         className="border-t border-zinc-900 pt-8 text-center text-zinc-700 text-xs font-mono uppercase space-y-2">
-                        <div>&copy; 2024 Underground Fight Club 23. Sva prava zadržana.</div>
+                        <div>&copy; {new Date().getFullYear()} Underground Fight Club 23. Sva prava zadržana.</div>
                         <div className="pt-2">
                             <a href="https://jovanjonic.com" target="_blank" rel="noreferrer"
                                className="hover:text-red-600 transition-colors">
