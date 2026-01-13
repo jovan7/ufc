@@ -18,6 +18,8 @@ import {
     MessageSquare,
     Instagram
 } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,14 +77,13 @@ export default function Home() {
         <div
             className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-red-700 selection:text-white overflow-x-hidden">
 
-            {/* Navigation - Always Fixed & Blurred */}
+            {/* Navigation */}
             <nav
                 className="fixed w-full z-50 bg-zinc-950/85 backdrop-blur-md border-b border-red-700/30 py-4 shadow-lg shadow-black/50">
                 <div className="container mx-auto px-6 flex justify-between items-center">
-                    <div className="text-2xl font-black italic tracking-tighter uppercase flex items-center gap-2">
-                        <span className="text-red-600 text-4xl">UFC</span>
-                        <span className="hidden sm:block">Underground<span className="text-zinc-500">23</span></span>
-                    </div>
+                    <Link href="#" className="text-2xl font-black italic tracking-tighter uppercase flex items-center gap-2">
+                        <Image src="/logo.webp" className="w-full" alt="underground fight club pirot" width="50" height="50"/>
+                    </Link>
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex items-center gap-8 font-bold uppercase tracking-wider text-sm">
@@ -133,7 +134,7 @@ export default function Home() {
                 </div>
             )}
 
-            {/* Hero Section - Font Adjusted for Mobile */}
+            {/* Hero Section */}
             <section className="relative h-screen flex items-center justify-center overflow-hidden">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
@@ -335,7 +336,7 @@ export default function Home() {
                                 className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
                             <div className="absolute bottom-0 left-0 p-6">
                                 <h3 className="text-2xl font-black uppercase italic text-white mb-1">Predrag
-                                    Ranđelović</h3>
+                                    R.</h3>
                                 <p className="text-red-600 font-bold uppercase text-sm mb-2">Diplomirani profesor sporta
                                     i fizičkog vaspitanja</p>
                                 <p className="text-zinc-400 text-xs">Specijalista za stand-up borbu i taktičku
@@ -369,7 +370,7 @@ export default function Home() {
                             <div
                                 className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
                             <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Ana M.</h3>
+                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Božidar S.</h3>
                                 <p className="text-red-600 font-bold uppercase text-sm mb-2">Kondicija & Snaga</p>
                                 <p className="text-zinc-400 text-xs">Ekspert za funkcionalni trening i oporavak.</p>
                             </div>
@@ -710,9 +711,9 @@ export default function Home() {
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
                         <div>
-                            <div className="text-3xl font-black italic tracking-tighter uppercase mb-6">
-                                <span className="text-red-600">UFC</span> 23
-                            </div>
+                            <Link href="#" className="block mb-6">
+                                <Image src="/logo.webp" alt="underground fight club pirot" width="60" height="60"/>
+                            </Link>
                             <p className="text-zinc-500 text-sm mb-6">
                                 Underground Fight Club 23 je premijerni borilački centar u Pirotu.
                                 Fokusirani na rezultate, disciplinu i izgradnju karaktera kroz borbu.
