@@ -10,20 +10,17 @@ import {
     ChevronRight,
     Dumbbell,
     Users,
-    MapPin,
-    Clock,
-    MessageCircle,
-    Phone,
-    Heart,
-    MessageSquare,
-    Instagram
+    Clock
 } from 'lucide-react';
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "@/components/footer";
+import BookInfo from "@/components/book-info";
+import Faq from "@/components/faq";
+import Merch from "@/components/merch";
 
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [openFaq, setOpenFaq] = useState(null);
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -33,46 +30,6 @@ export default function Home() {
         }
     };
 
-    const toggleFaq = (index: any) => {
-        setOpenFaq(openFaq === index ? null : index);
-    };
-
-    // Mock Data for Instagram Feed
-    const instagramPosts = [
-        {
-            id: 1,
-            image: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop",
-            date: "Juče",
-            caption: "Fokus na tehniku. Svaki udarac mora da ima nameru. Jutarnja grupa je danas pokidala! 🥊 #UFC23 #Trening",
-            likes: 124,
-            comments: 8
-        },
-        {
-            id: 2,
-            image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2072&auto=format&fit=crop",
-            date: "Pre 2 dana",
-            caption: "Novi bandažeri su stigli u klub! Dostupni u crnoj i crvenoj boji. Obezbedite svoje na pultu. 🔥",
-            likes: 89,
-            comments: 12
-        },
-        {
-            id: 3,
-            image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop",
-            date: "Pre 5 dana",
-            caption: "Pripreme za takmičenje u toku. Naš tim ne spava. Vidimo se u ringu sledećeg meseca! 🏆",
-            likes: 256,
-            comments: 34
-        },
-        {
-            id: 4,
-            image: "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=2000&auto=format&fit=crop",
-            date: "Pre nedelju dana",
-            caption: "Sparring day. Poštovanje protivnika je prvo pravilo kluba. Bez ega, samo rad. 🥋",
-            likes: 178,
-            comments: 21
-        }
-    ];
-
     return (
         <div
             className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-red-700 selection:text-white overflow-x-hidden">
@@ -81,7 +38,7 @@ export default function Home() {
             <nav
                 className="fixed w-full z-50 bg-zinc-950/65 backdrop-blur-md border-b border-red-700/30 py-4 shadow-lg shadow-black/50">
                 <div className="container mx-auto px-6 flex justify-between items-center">
-                    <Link href="#" className="text-2xl font-black italic tracking-tighter uppercase flex items-center gap-2">
+                    <Link href="/" className="text-2xl font-black italic tracking-tighter uppercase flex items-center gap-2">
                         <Image src="/logo.webp" className="w-full" alt="underground fight club pirot" width="50" height="50"/>
                     </Link>
 
@@ -428,348 +385,10 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Merch/Shop Section */}
-            <section id="shop" className="py-24 bg-zinc-900 border-y border-zinc-800">
-                <div className="container mx-auto px-6 text-center">
-                    <div className="mb-12">
-                        <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-2">
-                            UFC 23 <span className="text-red-600">Oprema</span>
-                        </h2>
-                        <p className="text-zinc-500 uppercase tracking-widest">Nosi boje svog kluba. Dostupno isključivo
-                            u
-                            klubu.</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {/* Item 1 */}
-                        <div
-                            className="group bg-black p-4 border border-zinc-800 hover:border-red-600 transition-all cursor-pointer">
-                            <div
-                                className="h-64 bg-zinc-900 flex items-center justify-center mb-6 group-hover:bg-zinc-800 transition-colors relative overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=1974&auto=format&fit=crop"
-                                    alt="Hoodie"
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                                />
-                            </div>
-                            <h3 className="text-xl font-bold uppercase mb-1">Underground Hoodie</h3>
-                            <p className="text-zinc-500 text-sm mb-4">Crna / Pamuk / Vez</p>
-                            <div className="text-red-600 font-mono font-bold text-lg">3500 RSD</div>
-                        </div>
-
-                        {/* Item 2 - REPLACED WITH WRAPS */}
-                        <div
-                            className="group bg-black p-4 border border-zinc-800 hover:border-red-600 transition-all cursor-pointer">
-                            <div
-                                className="h-64 bg-zinc-900 flex items-center justify-center mb-6 group-hover:bg-zinc-800 transition-colors relative overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1555661530-68c8e98db4e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Wraps"
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                                />
-                            </div>
-                            <h3 className="text-xl font-bold uppercase mb-1">UFC Bandažeri</h3>
-                            <p className="text-zinc-500 text-sm mb-4">4.5m / Polu-elastični</p>
-                            <div className="text-red-600 font-mono font-bold text-lg">1200 RSD</div>
-                        </div>
-
-                        {/* Item 3 */}
-                        <div
-                            className="group bg-black p-4 border border-zinc-800 hover:border-red-600 transition-all cursor-pointer">
-                            <div
-                                className="h-64 bg-zinc-900 flex items-center justify-center mb-6 group-hover:bg-zinc-800 transition-colors relative overflow-hidden">
-                                <img
-                                    src="https://images.unsplash.com/photo-1711825051467-fda9d8abea58?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Gloves"
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                                />
-                            </div>
-                            <h3 className="text-xl font-bold uppercase mb-1">UFC 23 Rukavice</h3>
-                            <p className="text-zinc-500 text-sm mb-4">12oz / 14oz / 16oz</p>
-                            <div className="text-red-600 font-mono font-bold text-lg">6000 RSD</div>
-                        </div>
-                    </div>
-
-                    <div
-                        className="mt-12 inline-block border border-red-600/30 bg-red-900/10 px-6 py-2 rounded text-red-500 text-sm font-mono">
-                        * Kupovina moguća samo na pultu kluba u Pirotu.
-                    </div>
-                </div>
-            </section>
-
-            {/* INSTAGRAM FEED / BLOG SECTION */}
-            <section id="feed" className="py-24 bg-zinc-950 px-6 border-b border-zinc-900 hidden">
-                <div className="container mx-auto">
-                    <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
-                        <div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-2">
-                                Poslednje iz <span className="text-red-600">Kluba</span>
-                            </h2>
-                            <div className="h-1 w-24 bg-red-600 skew-x-[-20deg]"></div>
-                        </div>
-                        <a
-                            href="https://www.instagram.com/underground_fight_club23/?hl=en"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="flex items-center gap-2 text-zinc-500 hover:text-white transition-colors group"
-                        >
-                            <Instagram size={24}/>
-                            <span
-                                className="uppercase font-bold tracking-widest text-sm group-hover:underline decoration-red-600 underline-offset-4">
-                   @underground_fight_club23
-                </span>
-                        </a>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {instagramPosts.map((post) => (
-                            <div key={post.id}
-                                 className="group bg-zinc-900 border border-zinc-800 hover:border-red-600 transition-all duration-300 flex flex-col h-full cursor-pointer">
-                                {/* Image Container */}
-                                <div className="relative aspect-square overflow-hidden bg-black">
-                                    <img
-                                        src={post.image}
-                                        alt="Instagram Post"
-                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                                    />
-                                    <div
-                                        className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
-                                    <div
-                                        className="absolute top-4 right-4 bg-zinc-950/80 px-3 py-1 text-xs font-mono text-zinc-300 rounded border border-zinc-700">
-                                        {post.date}
-                                    </div>
-                                </div>
-
-                                {/* Content Container */}
-                                <div className="p-6 flex flex-col flex-grow">
-                                    <p className="text-zinc-300 text-sm leading-relaxed mb-6 line-clamp-3 flex-grow">
-                                        {post.caption}
-                                    </p>
-
-                                    <div
-                                        className="flex items-center justify-between text-zinc-500 text-xs border-t border-zinc-800 pt-4 mt-auto">
-                                        <div className="flex items-center gap-4">
-                           <span className="flex items-center gap-1 group-hover:text-red-500 transition-colors">
-                              <Heart size={14} className="group-hover:fill-current"/> {post.likes}
-                           </span>
-                                            <span
-                                                className="flex items-center gap-1 group-hover:text-white transition-colors">
-                              <MessageSquare size={14}/> {post.comments}
-                           </span>
-                                        </div>
-                                        <span
-                                            className="uppercase tracking-wider font-bold group-hover:text-white transition-colors text-[10px]">
-                           Prikaži
-                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* FAQ SECTION */}
-            <section className="py-20 bg-zinc-950 px-6 border-b border-zinc-900">
-                <div className="container mx-auto max-w-3xl">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-black uppercase italic tracking-tighter">Česta Pitanja</h2>
-                        <div className="h-1 w-12 bg-zinc-700 mx-auto mt-4"></div>
-                    </div>
-
-                    <div className="space-y-4">
-                        {[
-                            {
-                                q: "Da li mi je potrebno prethodno iskustvo?",
-                                a: "Ne. Naši rekreativni programi su dizajnirani za apsolutne početnike. Treneri će vas voditi kroz osnove."
-                            },
-                            {
-                                q: "Šta mi je potrebno za prvi trening?",
-                                a: "Samo udobna sportska odeća (šorc i majica) i voda. Ako nemate opremu (rukavice, itd.), možete koristiti klupsku za prvi put."
-                            },
-                            {
-                                q: "Da li imate treninge za žene?",
-                                a: "Apsolutno. Naše grupe su mešovite, a atmosfera je profesionalna i podržavajuća."
-                            },
-                            {
-                                q: "Koja je starosna granica?",
-                                a: "Primamo članove od 16 godina pa naviše. Za mlađe uzraste potrebna je saglasnost roditelja."
-                            }
-                        ].map((item, idx) => (
-                            <div key={idx} className="border border-zinc-800 bg-zinc-900/50">
-                                <button
-                                    onClick={() => toggleFaq(idx)}
-                                    className="w-full flex justify-between items-center p-6 text-left hover:bg-zinc-800/50 transition-colors cursor-pointer"
-                                >
-                                    <span className="font-bold uppercase tracking-wide">{item.q}</span>
-                                    {openFaq === idx ? <X className="text-red-600"/> :
-                                        <ChevronRight className="text-zinc-500"/>}
-                                </button>
-                                {openFaq === idx && (
-                                    <div className="p-6 text-zinc-400 border-t border-zinc-800/50">
-                                        {item.a}
-                                    </div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Booking Section - REDESIGNED */}
-            <section id="booking" className="py-24 px-6 relative overflow-hidden bg-zinc-900">
-                {/* Decorative BG */}
-                <div className="absolute -right-20 top-20 w-96 h-96 bg-red-900/20 rounded-full blur-[100px]"></div>
-
-                <div className="container mx-auto max-w-5xl">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="text-5xl font-black uppercase italic tracking-tighter leading-none mb-6">
-                                Spremni za <br/><span className="text-red-600">Borbu?</span>
-                            </h2>
-                            <p className="text-zinc-400 text-lg mb-8">
-                                Mi ne komplikujemo. Termini se zakazuju direktno.
-                                Svi članovi su povezani, svi termini su transparentni.
-                            </p>
-
-                            <div className="flex flex-col gap-4">
-                                <div className="flex items-center gap-4 p-4 bg-zinc-950 border-l-4 border-green-600">
-                                    <MessageCircle className="text-green-500"/>
-                                    <div>
-                                        <h4 className="font-bold uppercase">WhatsApp Grupa</h4>
-                                        <p className="text-xs text-zinc-500">Termini se objavljuju u grupi. Lajkuj za
-                                            potvrdu.</p>
-                                    </div>
-                                </div>
-
-                                {/* Simplified Gear Section */}
-                                <div className="flex items-center gap-4 p-4 bg-zinc-950 border-l-4 border-zinc-700">
-                                    <ShieldAlert className="text-zinc-500"/>
-                                    <div>
-                                        <h4 className="font-bold uppercase">Oprema</h4>
-                                        <p className="text-xs text-zinc-500 mt-1 leading-relaxed">
-                                            Ponesite svoju ili kupite profesionalnu opremu u klubu.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Redesigned Booking Card with Real Links */}
-                        <div
-                            className="relative bg-zinc-950 border border-zinc-800 p-8 md:p-12 text-center group hover:border-red-900/50 transition-all duration-500 shadow-2xl">
-                            <div
-                                className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-                                <MessageCircle size={150}/>
-                            </div>
-
-                            <div className="relative z-10 flex flex-col items-center">
-                                <div
-                                    className="w-20 h-20 bg-green-900/20 rounded-full flex items-center justify-center mb-6 border border-green-500/30 text-green-500 shadow-[0_0_30px_rgba(34,197,94,0.15)] animate-pulse">
-                                    <Phone size={36}/>
-                                </div>
-
-                                <h3 className="text-4xl font-black uppercase italic mb-4 tracking-tighter">
-                                    Prijavi se <span className="text-red-600">Odmah</span>
-                                </h3>
-
-                                <p className="text-zinc-500 mb-8 max-w-sm mx-auto text-sm leading-relaxed">
-                                    Klikni ispod da pošalješ poruku za probni trening ili da zatražiš pristup grupi za
-                                    termine.
-                                </p>
-
-                                <div className="flex flex-col gap-4 w-full max-w-xs">
-                                    <a
-                                        href="https://wa.me/381601234567?text=Pozdrav,%20želim%20da%20zakažem%20probni%20trening"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="bg-green-600 text-white py-4 px-6 font-bold uppercase tracking-wider hover:bg-green-500 transition shadow-[0_0_20px_rgba(34,197,94,0.3)] flex items-center justify-center gap-2 skew-x-[-6deg] group/btn"
-                                    >
-                                        <span className="skew-x-[6deg] flex items-center gap-2"><MessageCircle
-                                            size={20}/> Pošalji Poruku</span>
-                                    </a>
-                                    <a
-                                        href="https://chat.whatsapp.com/invite/YOUR_GROUP_LINK"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="border border-zinc-700 text-zinc-400 py-4 px-6 font-bold uppercase tracking-wider hover:bg-zinc-900 hover:text-white hover:border-zinc-500 transition flex items-center justify-center gap-2 skew-x-[-6deg]"
-                                    >
-                                        <span className="skew-x-[6deg]">Već si član? Uđi u Grupu</span>
-                                    </a>
-                                </div>
-                                <p className="text-xs text-zinc-600 mt-6 font-mono">
-                                    * Komunikacija se odvija isključivo putem WhatsApp aplikacije
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Location / Footer */}
-            <footer className="bg-zinc-950 border-t border-zinc-900 pt-16 pb-8 px-6">
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
-                        <div>
-                            <Link href="#" className="block mb-6">
-                                <Image src="/logo.webp" className="mx-auto md:ml-0" alt="underground fight club pirot" width="60" height="60"/>
-                            </Link>
-                            <p className="text-zinc-500 text-sm mb-6">
-                                Underground Fight Club 23 je premijerni borilački centar u Pirotu.
-                                Fokusirani na rezultate, disciplinu i izgradnju karaktera kroz borbu.
-                            </p>
-
-                            {/* Socials */}
-                            <div className="flex justify-center md:justify-start gap-4">
-                                <a href="https://www.instagram.com/underground_fight_club23/?hl=en" target="_blank"
-                                   rel="noreferrer"
-                                   className="w-10 h-10 bg-zinc-900 flex items-center justify-center rounded-full text-zinc-400 hover:bg-red-600 hover:text-white transition-all">
-                                    <Instagram size={20}/>
-                                </a>
-                                {/* Placeholder for future socials */}
-                                <a href="tel:1234"
-                                   className="w-10 h-10 bg-zinc-900 flex items-center justify-center rounded-full text-zinc-400 hover:bg-red-600 hover:text-white transition-all">
-                                    <Phone size={20}/>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col items-center md:items-start">
-                            <h3 className="text-xl font-bold uppercase mb-6 flex items-center gap-2">
-                                <MapPin className="text-red-600" size={20}/> Lokacija
-                            </h3>
-                            <p className="text-zinc-400 mb-2">Pirot, Srbija</p>
-                            <p className="text-zinc-400 mb-2">Lava Tolstoja BB</p>
-                        </div>
-
-                        <div className="flex flex-col items-center md:items-start">
-                            <h3 className="text-xl font-bold uppercase mb-6 flex items-center gap-2">
-                                <Clock className="text-red-600" size={20}/> Radno Vreme
-                            </h3>
-                            <div
-                                className="flex justify-between w-full max-w-xs text-zinc-400 border-b border-zinc-900 pb-2 mb-2">
-                                <span>Pon - Pet:</span>
-                                <span className="font-bold text-white">09:00 - 22:00</span>
-                            </div>
-                            {/* Saturday removed as requested */}
-                            <div className="w-full max-w-xs text-zinc-600 text-xs italic mt-2">
-                                Vikendom ne radimo (osim za zakazane seminare)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        className="border-t border-zinc-900 pt-8 text-center text-zinc-700 text-xs font-mono uppercase space-y-2">
-                        <div>&copy; {new Date().getFullYear()} Underground Fight Club 23. Sva prava zadržana.</div>
-                        <div className="pt-2">
-                            <a href="https://jovanjonic.com" target="_blank" rel="noreferrer"
-                               className="hover:text-red-600 transition-colors">
-                                Izrada sajta: jovanjonic.com
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <Merch />
+            <Faq />
+            <BookInfo />
+            <Footer />
         </div>
     );
 }
