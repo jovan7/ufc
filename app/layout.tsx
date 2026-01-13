@@ -12,10 +12,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = 'https://undergroundfightclub.com';
+
 export const metadata: Metadata = {
-  title: "Underground Figth Club Pirot",
-  description: "UFC - Underground Figth Club Pirot",
-};
+    metadataBase: new URL(baseUrl),
+    title: {
+        default: 'Underground Fight Club Pirot',
+        template: 'UFC - Underground Fight Club Pirot',
+    },
+    description: 'UFC - Underground Fight Club Pirot',
+
+    openGraph: {
+        title: 'Underground Fight Club Pirot',
+        description: 'UFC - Underground Fight Club Pirot',
+        url: baseUrl,
+        siteName: 'Underground Fight Club Pirot',
+        locale: 'en_US',
+        type: 'website',
+        images: [
+            {
+                url: '/logo.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Prikaz mog sajta',
+            },
+        ],
+    },
+
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Underground Fight Club Pirot',
+        description: 'UFC - Underground Fight Club Pirot',
+        images: ['/logo.webp']
+    },
+}
 
 export default function RootLayout({
   children,
