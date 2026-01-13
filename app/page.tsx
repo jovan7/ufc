@@ -79,7 +79,7 @@ export default function Home() {
 
             {/* Navigation */}
             <nav
-                className="fixed w-full z-50 bg-zinc-950/85 backdrop-blur-md border-b border-red-700/30 py-4 shadow-lg shadow-black/50">
+                className="fixed w-full z-50 bg-zinc-950/65 backdrop-blur-md border-b border-red-700/30 py-4 shadow-lg shadow-black/50">
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <Link href="#" className="text-2xl font-black italic tracking-tighter uppercase flex items-center gap-2">
                         <Image src="/logo.webp" className="w-full" alt="underground fight club pirot" width="50" height="50"/>
@@ -712,7 +712,7 @@ export default function Home() {
                     <div className="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
                         <div>
                             <Link href="#" className="block mb-6">
-                                <Image src="/logo.webp" alt="underground fight club pirot" width="60" height="60"/>
+                                <Image src="/logo.webp" className="mx-auto md:ml-0" alt="underground fight club pirot" width="60" height="60"/>
                             </Link>
                             <p className="text-zinc-500 text-sm mb-6">
                                 Underground Fight Club 23 je premijerni borilački centar u Pirotu.
