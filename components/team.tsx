@@ -2,7 +2,7 @@ import {Award, Medal, Trophy} from "lucide-react";
 
 export default function Team() {
     const headCoach = {
-        name: "Predrag J.",
+        name: "Predrag R.",
         title: "Glavni Trener",
         image: "/team/predragr.jpeg",
         achievements: [
