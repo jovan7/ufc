@@ -17,14 +17,14 @@ const baseUrl = 'https://undergroundfightclub.com';
 export const metadata: Metadata = {
     metadataBase: new URL(baseUrl),
     title: {
-        default: 'Underground Fight Club Pirot',
+        default: 'Underground Fight Club 23 | Boks i Kik-boks Pirot',
         template: 'UFC - Underground Fight Club Pirot',
     },
-    description: 'UFC - Underground Fight Club Pirot',
+    description: 'Najbolji boks i kik-boks klub u Pirotu, Srbija. Treniraj sa šampionima. Prijavi se za probni trening.',
 
     openGraph: {
         title: 'Underground Fight Club Pirot',
-        description: 'UFC - Underground Fight Club Pirot',
+        description: 'Najbolji boks i kik-boks klub u Pirotu, Srbija. Treniraj sa šampionima. Prijavi se za probni trening.',
         url: baseUrl,
         siteName: 'Underground Fight Club Pirot',
         locale: 'en_US',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
 
     twitter: {
         card: 'summary_large_image',
-        title: 'Underground Fight Club Pirot',
-        description: 'UFC - Underground Fight Club Pirot',
+        title: 'Underground Fight Club 23 | Boks i Kik-boks Pirot',
+        description: 'Najbolji boks i kik-boks klub u Pirotu, Srbija. Treniraj sa šampionima. Prijavi se za probni trening.',
         images: ['/logo.webp']
     },
 }
