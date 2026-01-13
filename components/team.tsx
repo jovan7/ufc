@@ -27,7 +27,7 @@ export default function Team() {
         { name: "Bozidar S.", role: "Pomoćni trener", img: "/team/bozidar.jpeg" },
         { name: "Dimitrije P.", role: "Pomoćni trener", img: "/team/dimitrije.jpeg" },
         { name: "Ognjen A.", role: "Pomoćni trener", img: "/team/ognjen.jpeg" },
-        { name: "Radeta M.", role: "Kondicioni trener", img: "/team/radem.jpeg" },
+        { name: "Radivoje M.", role: "Kondicioni trener", img: "/team/radem.jpeg" },
     ];
     return (
         <section id="team" className="py-24 bg-zinc-900 relative border-t border-zinc-800">
@@ -41,7 +41,6 @@ export default function Team() {
                     </p>
                 </div>
 
-                {/* HEAD COACH - FEATURED */}
                 <div className="mb-16">
                     <div
                         className="bg-zinc-950 border border-red-900/50 p-6 md:p-10 lg:p-12 shadow-2xl relative overflow-hidden group">
