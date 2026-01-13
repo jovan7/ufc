@@ -8,31 +8,32 @@ export default function Merch() {
             desc: "Crna / Crvena / Bela / Pamuk",
             price: "2400 RSD",
             images: [
-                "/majice/crna.jpeg",
-                "/majice/crvena.jpeg",
-                "/majice/bela.jpeg"
+                "/t-shirt/crna.jpeg",
+                "/t-shirt/crvena.jpeg",
+                "/t-shirt/bela.jpeg"
             ]
         },
         {
             id: 2,
-            title: "UFC Bandažeri",
-            desc: "4.5m / Polu-elastični",
-            price: "1200 RSD",
+            title: "Bandažeri",
+            desc: "4m / Polu-elastični",
+            price: "1000 RSD",
             images: [
-                "https://images.unsplash.com/photo-1591117207239-274d13636b04?q=80&w=2070&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1605296867304-6f0246011c78?q=80&w=2000&auto=format&fit=crop", // Action shot
-                "https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=2000&auto=format&fit=crop" // Detail
+                "/handwrap/bandazeri.jpeg",
             ]
         },
         {
             id: 3,
-            title: "UFC 23 Rukavice",
-            desc: "12oz / 14oz / 16oz",
-            price: "6000 RSD",
+            title: "Rukavice",
+            desc: "Venum / Underground",
+            price: "3600 RSD / 4600 RSD",
             images: [
-                "https://images.unsplash.com/photo-1629255670845-a744274c4146?q=80&w=1965&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop", // Action
-                "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop" // Context
+                "/gloves/rukavice_crvene.jpeg",
+                "/gloves/rukavice_bele.jpeg",
+                "/gloves/rukavice_crne.jpeg",
+                "/gloves/rukavice_bez.jpeg",
+                "/gloves/rukavice_roze.jpeg",
+                "/gloves/rukavice_zelene.jpeg",
             ]
         }
     ];

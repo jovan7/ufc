@@ -8,11 +8,17 @@ export default function Footer() {
                 <div className="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
                     <div>
                         <Link href="/" className="block mb-6">
-                            <img src="/logo.webp" className="w-[70px] mx-auto md:ml-0" alt="underground fight club pirot" />
+                            <img src="/logo.webp" className="w-[70px] mx-auto md:ml-0"
+                                 alt="underground fight club pirot"/>
                         </Link>
                         <p className="text-zinc-500 text-sm mb-6">
                             Underground Fight Club 23 je premijerni borilački centar u Pirotu.
                             Fokusirani na rezultate, disciplinu i izgradnju karaktera kroz borbu.
+                        </p>
+                        <p className="text-zinc-500 text-sm mb-6">
+                            Maticni broj: 123123
+                            <br />
+                            PIB: 123123
                         </p>
 
                         {/* Socials */}

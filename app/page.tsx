@@ -18,6 +18,8 @@ import Footer from "@/components/footer";
 import BookInfo from "@/components/book-info";
 import Faq from "@/components/faq";
 import Merch from "@/components/merch";
+import Gym from "@/components/gym";
+import Team from "@/components/team";
 
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -269,122 +271,8 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* TEAM SECTION */}
-            <section id="team" className="py-24 bg-zinc-900 relative border-t border-zinc-800">
-                <div className="container mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-4">
-                            Elitni <span className="text-red-600">Tim</span>
-                        </h2>
-                        <p className="text-zinc-400 max-w-2xl mx-auto">
-                            Ne tražimo izgovore. Naši treneri su aktivni borci i veterani sa dokazanim rezultatima.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {/* Coach 1 */}
-                        <div
-                            className="group relative h-[400px] bg-black overflow-hidden border border-zinc-800 cursor-pointer">
-                            <img
-                                src="https://plus.unsplash.com/premium_photo-1661670368077-2ed26fdf3319?q=80&w=1805&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Coach"
-                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"/>
-                            <div
-                                className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
-                            <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Predrag
-                                    R.</h3>
-                                <p className="text-red-600 font-bold uppercase text-sm mb-2">Diplomirani profesor sporta
-                                    i fizičkog vaspitanja</p>
-                                <p className="text-zinc-400 text-xs">Specijalista za stand-up borbu i taktičku
-                                    pripremu.</p>
-                            </div>
-                        </div>
-
-                        {/* Coach 2 */}
-                        <div
-                            className="group relative h-[400px] bg-black overflow-hidden border border-zinc-800 cursor-pointer">
-                            <img
-                                src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop"
-                                alt="Coach"
-                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"/>
-                            <div
-                                className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
-                            <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Stefan P.</h3>
-                                <p className="text-red-600 font-bold uppercase text-sm mb-2">BJJ & Grappling</p>
-                                <p className="text-zinc-400 text-xs">Crni pojas. Fokus na kontrolu i završnice.</p>
-                            </div>
-                        </div>
-
-                        {/* Coach 3 */}
-                        <div
-                            className="group relative h-[400px] bg-black overflow-hidden border border-zinc-800 cursor-pointer">
-                            <img
-                                src="https://images.unsplash.com/photo-1727848480902-beb1959c06f1?q=80&w=1542&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Coach"
-                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"/>
-                            <div
-                                className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
-                            <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-2xl font-black uppercase italic text-white mb-1">Božidar S.</h3>
-                                <p className="text-red-600 font-bold uppercase text-sm mb-2">Kondicija & Snaga</p>
-                                <p className="text-zinc-400 text-xs">Ekspert za funkcionalni trening i oporavak.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Gym Section */}
-            <section id="gym" className="py-20 bg-zinc-950 relative overflow-hidden border-t border-zinc-900">
-                <div className="container mx-auto px-6">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1">
-                            <div className="grid grid-cols-2 gap-4">
-                                <img
-                                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
-                                    className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0"
-                                    alt="Gym"/>
-                                <img
-                                    src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
-                                    className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0 mt-8"
-                                    alt="Gym"/>
-                            </div>
-                        </div>
-                        <div className="order-1 md:order-2">
-                            <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-6">
-                                Hardcore <span className="text-red-600">Teretana</span>
-                            </h2>
-                            <p className="text-zinc-400 mb-6 text-lg">
-                                Bez izgovora. Samo čelik i karakter. Ovde se ne dolazi da se 'vežba', ovde se kuje
-                                gvožđe i sprema za rat. Teretana za one koji znaju da rezultat ne pada sa neba, već se
-                                otima sa poda.
-                            </p>
-                            <ul className="space-y-4 mb-8">
-                                <li className="flex items-center gap-3">
-                                    <Dumbbell className="text-red-600"/>
-                                    <span className="font-bold uppercase tracking-wider">Slobodni Tegovi do 50kg</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Target className="text-red-600"/>
-                                    <span
-                                        className="font-bold uppercase tracking-wider">Prostor za Deadlift & Squat</span>
-                                </li>
-                                <li className="flex items-center gap-3">
-                                    <Clock className="text-red-600"/>
-                                    <span className="font-bold uppercase tracking-wider">Dostupno članovima 24/7</span>
-                                </li>
-                            </ul>
-                            <button
-                                className="px-8 py-3 border border-white hover:bg-white hover:text-black uppercase font-black tracking-widest transition-colors cursor-pointer">
-                                Pogledaj Pakete
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <Team />
+            <Gym />
             <Merch />
             <Faq />
             <BookInfo />

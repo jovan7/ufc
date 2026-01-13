@@ -21,7 +21,7 @@ const ProductCard = ({title, desc, price, images}: {
         <div
             className="group bg-black p-4 border border-zinc-800 hover:border-red-600 transition-all cursor-pointer flex flex-col h-full">
             <div
-                className="h-[300px] bg-zinc-900 mb-6 group-hover:bg-zinc-800 transition-colors relative overflow-hidden w-full">
+                className="h-[350px] bg-zinc-900 mb-6 group-hover:bg-zinc-800 transition-colors relative overflow-hidden w-full">
                 {images.map((img, index) => (
                     <img
                         key={index}
