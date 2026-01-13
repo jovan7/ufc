@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const baseUrl = 'https://undergroundfightclub.com';
+const baseUrl = 'https://ufcpirot.netlify.app/';
 
 export const metadata: Metadata = {
     metadataBase: new URL(baseUrl),
