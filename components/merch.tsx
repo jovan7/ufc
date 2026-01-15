@@ -38,7 +38,7 @@ export default function Merch() {
         },
         {
             id: 4,
-            title: "Šlemovi",
+            title: "Kacige",
             desc: "Iron",
             price: "",
             images: [
@@ -47,8 +47,8 @@ export default function Merch() {
         },
         {
             id: 5,
-            title: "Trenerke",
-            desc: "Underground",
+            title: "Underground trenerke",
+            desc: "Bele / Crne / Crvene",
             price: "",
             images: [
                 "/sweatpants/bela.jpeg",
@@ -63,8 +63,8 @@ export default function Merch() {
         },
         {
             id: 6,
-            title: "šortsevi",
-            desc: "Underground",
+            title: "Underground šorts za trening",
+            desc: "Maskirni / Crni / Plavi",
             price: "",
             images: [
                 "/shorts/maskirni.jpeg",
