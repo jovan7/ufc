@@ -35,6 +35,51 @@ export default function Merch() {
                 "/gloves/rukavice_roze.jpeg",
                 "/gloves/rukavice_zelene.jpeg",
             ]
+        },
+        {
+            id: 4,
+            title: "Šlemovi",
+            desc: "Iron",
+            price: "",
+            images: [
+                "/headgear/kaciga.jpeg",
+            ]
+        },
+        {
+            id: 5,
+            title: "Trenerke",
+            desc: "Underground",
+            price: "",
+            images: [
+                "/sweatpants/bela.jpeg",
+                "/sweatpants/crvena.jpeg",
+                "/sweatpants/bela2.jpeg",
+                "/sweatpants/crno-crvena.jpeg",
+                "/sweatpants/crna.jpeg",
+                "/sweatpants/crna2.jpeg",
+                "/sweatpants/crna3.jpeg",
+                "/sweatpants/crna4.jpeg",
+            ]
+        },
+        {
+            id: 6,
+            title: "šortsevi",
+            desc: "Underground",
+            price: "",
+            images: [
+                "/shorts/maskirni.jpeg",
+                "/shorts/plavi.jpeg",
+                "/shorts/crni.jpeg",
+            ]
+        },
+        {
+            id: 7,
+            title: "Guma za zube",
+            desc: "Underground",
+            price: "",
+            images: [
+                "/mouthguard/guma.jpeg"
+            ]
         }
     ];
 
@@ -50,7 +95,7 @@ export default function Merch() {
                         klubu.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-3 gap-4">
                     {shopItems.map((item) => (
                         <ProductCard
                             key={item.id}
