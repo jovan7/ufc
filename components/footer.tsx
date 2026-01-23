@@ -12,8 +12,11 @@ export default function Footer() {
                                  alt="underground fight club pirot"/>
                         </Link>
                         <p className="text-zinc-500 text-sm mb-6">
-                            Underground Fight Club 23 je premijerni borilački centar u Pirotu.
+                            Underground Fight Club je premijerni borilački centar u Pirotu.
                             Fokusirani na rezultate, disciplinu i izgradnju karaktera kroz borbu.
+                        </p>
+                        <p className="text-zinc-500 text-sm mb-6">
+                            Broj telefona: <a href="tel:0603199388">060 3199388</a>
                         </p>
                         <p className="text-zinc-500 text-sm mb-6">
                             Maticni broj: 123123
@@ -60,7 +63,7 @@ export default function Footer() {
 
                 <div
                     className="border-t border-zinc-900 pt-8 text-center text-zinc-700 text-xs font-mono uppercase space-y-2">
-                    <div>&copy; {new Date().getFullYear()} Underground Fight Club 23. Sva prava zadržana.</div>
+                    <div>&copy; {new Date().getFullYear()} Underground Fight Club. Sva prava zadržana.</div>
                     <div className="pt-2">
                         <a href="https://jovanjonic.com" target="_blank" rel="noreferrer"
                            className="hover:text-red-600 transition-colors">

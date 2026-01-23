@@ -8,12 +8,20 @@ export default function Gym() {
                     <div className="order-2 md:order-1">
                         <div className="grid grid-cols-2 gap-4">
                             <img
-                                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop"
-                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0"
+                                src="/gym/gym1.jpeg"
+                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500"
                                 alt="Gym"/>
                             <img
-                                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
-                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0 mt-8"
+                                src="/gym/gym2.jpeg"
+                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 mt-8"
+                                alt="Gym"/>
+                            <img
+                                src="/gym/gym1.jpeg"
+                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500"
+                                alt="Gym"/>
+                            <img
+                                src="/gym/gym2.jpeg"
+                                className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 mt-8"
                                 alt="Gym"/>
                         </div>
                     </div>
@@ -38,13 +46,9 @@ export default function Gym() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Clock className="text-red-600"/>
-                                <span className="font-bold uppercase tracking-wider">Dostupno članovima 24/7</span>
+                                <span className="font-bold uppercase tracking-wider">Dostupno članovima od 09:00 - 22:00</span>
                             </li>
                         </ul>
-                        <button
-                            className="px-8 py-3 border border-white hover:bg-white hover:text-black uppercase font-black tracking-widest transition-colors cursor-pointer">
-                            Pogledaj Pakete
-                        </button>
                     </div>
                 </div>
             </div>

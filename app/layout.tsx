@@ -17,8 +17,8 @@ const baseUrl = 'https://ufcpirot.netlify.app/';
 export const metadata: Metadata = {
     metadataBase: new URL(baseUrl),
     title: {
-        default: 'Underground Fight Club 23 | Boks i Kik-boks Pirot',
-        template: 'UFC - Underground Fight Club Pirot',
+        default: 'Underground Fight Club | Boks i Kik-boks Pirot',
+        template: 'Underground Fight Club Pirot',
     },
     description: 'Najbolji boks i kik-boks klub u Pirotu, Srbija. Treniraj sa šampionima. Prijavi se za probni trening.',
 

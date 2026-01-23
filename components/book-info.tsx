@@ -70,14 +70,6 @@ export default function BookInfo() {
                                         <span className="skew-x-[6deg] flex items-center gap-2"><MessageCircle
                                             size={20}/> Pošalji Poruku</span>
                                 </a>
-                                <a
-                                    href="https://chat.whatsapp.com/invite/YOUR_GROUP_LINK"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="border border-zinc-700 text-zinc-400 py-4 px-6 font-bold uppercase tracking-wider hover:bg-zinc-900 hover:text-white hover:border-zinc-500 transition flex items-center justify-center gap-2 skew-x-[-6deg]"
-                                >
-                                    <span className="skew-x-[6deg]">Već si član? Uđi u Grupu</span>
-                                </a>
                             </div>
                             <p className="text-xs text-zinc-600 mt-6 font-mono">
                                 * Komunikacija se odvija isključivo putem WhatsApp aplikacije

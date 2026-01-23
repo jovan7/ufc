@@ -49,12 +49,15 @@ export default function Programs() {
                                 Grupna atmosfera
                             </li>
                         </ul>
-                        <button
-                            onClick={() => scrollToSection('booking')}
-                            className="w-full py-3 border border-zinc-700 uppercase font-bold text-sm tracking-widest hover:bg-white hover:text-black transition-colors  cursor-pointer"
+
+                        <a
+                            href="https://wa.me/381603199388?text=Pozdrav,%20želim%20da%20zakažem%20rekreativni%20trening"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full block text-center py-3 border border-zinc-700 uppercase font-bold text-sm tracking-widest hover:bg-white hover:text-black transition-colors cursor-pointer"
                         >
                             Pridruži se Grupi
-                        </button>
+                        </a>
                     </div>
 
                     {/* Personal */}
@@ -87,12 +90,14 @@ export default function Programs() {
                                 Fleksibilni termini
                             </li>
                         </ul>
-                        <button
-                            onClick={() => scrollToSection('booking')}
-                            className="w-full py-3 border border-zinc-700 uppercase font-bold text-sm tracking-widest hover:bg-white hover:text-black transition-colors cursor-pointer"
+                        <a
+                            href="https://wa.me/381603199388?text=Pozdrav,%20želim%20da%20zakažem%20personalni%20trening"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full block text-center py-3 border border-zinc-700 uppercase font-bold text-sm tracking-widest hover:bg-white hover:text-black transition-colors cursor-pointer"
                         >
                             Zakaži Privatni
-                        </button>
+                        </a>
                     </div>
 
                     {/* Professional / Tactical */}
@@ -131,12 +136,14 @@ export default function Programs() {
                                 Napredna bliska borba
                             </li>
                         </ul>
-                        <button
-                            onClick={() => scrollToSection('booking')}
-                            className="w-full py-3 bg-red-700 text-white uppercase font-bold text-sm tracking-widest hover:bg-red-600 transition-colors cursor-pointer"
+                        <a
+                            href="https://wa.me/381603199388?text=Pozdrav,%20želim%20da%20zakažem%20taktička%20trening"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="w-full block text-center py-3 bg-red-700 text-white uppercase font-bold text-sm tracking-widest hover:bg-red-600 transition-colors cursor-pointer"
                         >
                             Prijavi se za Procenu
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

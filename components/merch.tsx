@@ -88,7 +88,7 @@ export default function Merch() {
             <div className="container mx-auto px-6 text-center">
                 <div className="mb-12">
                     <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter mb-2">
-                        UFC 23 <span className="text-red-600">Oprema</span>
+                        Underground <span className="text-red-600">Oprema</span>
                     </h2>
                     <p className="text-zinc-500 uppercase tracking-widest">Nosi boje svog kluba. Dostupno isključivo
                         u
