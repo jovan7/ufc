@@ -16,11 +16,11 @@ export default function Gym() {
                                 className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 mt-8"
                                 alt="Gym"/>
                             <img
-                                src="/gym/gym1.jpeg"
+                                src="/gym/gym3.jpeg"
                                 className="rounded-lg opacity-80 hover:opacity-100 transition duration-500"
                                 alt="Gym"/>
                             <img
-                                src="/gym/gym2.jpeg"
+                                src="/gym/gym4.jpeg"
                                 className="rounded-lg opacity-80 hover:opacity-100 transition duration-500 mt-8"
                                 alt="Gym"/>
                         </div>

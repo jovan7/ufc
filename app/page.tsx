@@ -10,8 +10,6 @@ import Hero from "@/components/hero";
 import Header from "@/components/header";
 
 export default function Home() {
-
-
     return (
         <div
             className="min-h-screen bg-zinc-950 text-white font-sans selection:bg-red-700 selection:text-white overflow-x-hidden">

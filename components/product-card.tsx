@@ -45,7 +45,7 @@ const ProductCard = ({title, desc, price, images}: {
             </div>
             <h3 className="text-xl font-bold uppercase mb-1">{title}</h3>
             <p className="text-zinc-500 text-sm mb-4">{desc}</p>
-            <div className="text-red-600 font-mono font-bold text-lg mt-auto">{price}</div>
+            {/*<div className="text-red-600 font-mono font-bold text-lg mt-auto">{price}</div>*/}
         </div>
     );
 };
