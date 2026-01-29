@@ -9,11 +9,10 @@ export default function Hero() {
     };
     return (
         <section className="relative h-screen flex items-center justify-center overflow-hidden">
-            {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop"
-                    alt="Gym Background"
+                    src="/gym/gym1.jpeg"
+                    alt="underground pirot"
                     className="w-full h-full object-cover opacity-40 grayscale"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent"/>

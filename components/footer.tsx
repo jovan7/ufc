@@ -67,7 +67,7 @@ export default function Footer() {
                     <div className="pt-2">
                         <a href="https://jovanjonic.com" target="_blank" rel="noreferrer"
                            className="hover:text-red-600 transition-colors">
-                            Izrada sajta: jovanjonic.com
+                            Izrada sajta: <p className="animate-bounce mt-2 font-bold">jovanjonic.com</p>
                         </a>
                     </div>
                 </div>
