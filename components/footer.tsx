@@ -7,24 +7,23 @@ export default function Footer() {
             <div className="container mx-auto">
                 <div className="grid md:grid-cols-3 gap-12 mb-12 text-center md:text-left">
                     <div>
-                        <Link href="/" className="block mb-6">
+                        <Link href="/" className="inline-block mb-6">
                             <img src="/logo.webp" className="w-[70px] mx-auto md:ml-0"
                                  alt="underground fight club pirot"/>
                         </Link>
-                        <p className="text-zinc-500 text-sm mb-6">
+                        <p className="text-zinc-500 text-sm mb-3">
                             Underground Fight Club je premijerni borilački centar u Pirotu.
                             Fokusirani na rezultate, disciplinu i izgradnju karaktera kroz borbu.
                         </p>
-                        <p className="text-zinc-500 text-sm mb-6">
-                            Broj telefona: <a href="tel:0603199388">060 3199388</a>
+                        <p className="text-zinc-500 text-sm mb-3">
+                            Broj telefona: <a href="tel:+381603199388">060 3199388</a>
                         </p>
                         <p className="text-zinc-500 text-sm mb-6">
-                            Maticni broj: 123123
+                            Maticni broj: 28760655
                             <br />
-                            PIB: 123123
+                            PIB: 115523357
                         </p>
 
-                        {/* Socials */}
                         <div className="flex justify-center md:justify-start gap-4">
                             <a href="https://www.instagram.com/underground_fight_club23/?hl=en" target="_blank"
                                rel="noreferrer"
